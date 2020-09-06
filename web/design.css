@@ -1,0 +1,181 @@
+html * {
+    color : black;
+    font-family : comic sans ms;
+}
+body {
+    margin : 0;
+    background-color : white;
+}
+#header {
+    background : yellow;
+    height : 4em;
+    margin-right : -32px;
+    border-bottom : 3px solid #292929;
+}
+nav ul ul {
+    display : none;
+}
+nav ul li:hover > ul {
+    display : block;
+}
+nav ul {
+    list-style : none;
+    margin-right : 30px;
+    float : right;
+    position : relative;
+    display : inline-table;
+}
+nav ul:after {
+    content : "";
+    clear : both;
+    display : block;
+}
+nav ul li {
+    float : right;
+    border-right : 0.5px solid #292929;
+    top : 0;
+}
+nav ul li:hover {
+    border-bottom : 1px solid #00ccff;
+}
+nav ul li:hover a {
+    border-right : 0.5px solid #292929;
+}
+nav ul li a {
+    display : block;
+    padding : 10px 30px;
+    text-decoration : none;
+}
+nav ul ul {
+    background : yellow;
+    border-radius : 0;
+    padding : 0;
+    position : absolute;
+    top : 100%;
+}
+nav ul ul li {
+    float : none;
+    border-top : 1px solid black;
+    position : relative;
+}
+nav ul ul li a {
+    padding : 15px 40px;
+    color : black;
+}
+nav ul ul li a:hover {
+    border-bottom : 1px solid #575f6a;
+}
+nav ul ul ul {
+    position : absolute;
+    left : 100%;
+    top : 0;
+}
+#sidebar {
+    width : 120px;
+    background-color : yellow;
+    left : 0;
+    height : 900px;
+    position : absolute;
+}
+#sidebar ul {
+    list-style-type : none;
+    left : 0;
+    margin : 0;
+    padding : 0;
+    background-color : yellow;
+}
+#sidebar ul li a {
+    padding : 8px;
+    text-decoration : none;
+    font-size : 100%;
+    display : block;
+    left : 10px;
+    width : 80%;
+}
+#sidebar > ul li a:hover {
+    border-right : 3px solid #00ccff;
+}
+#section {
+    border-width : 2px;
+    border-radius : 25px;
+    margin-left : 100px;
+    padding : 35px;
+    width : 750px;
+    height : 600px;
+}
+
+#section form {
+    text-align: center;
+}
+
+#cen{
+    height: 200px;
+    width: 400px;
+    background: black;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+
+#footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: yellow;
+    text-align: center;
+    color: blue;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+section img{
+    width:200px;
+    height:200px;
+}
+/*Formatting the dimensions of images in the main content of the pages*/
+
+#footer a img{
+    width:20px;
+    height:20px;
+}
+/*Formatting the dimensions of images in the main content of the pages*/
+
+
+.profile-image {
+    display: table;
+    width: 500px;
+    margin: 0 auto;
+}
+/*Table created to contain both the social media logo and information*/
+
+.profile-image img {
+    display: table-cell;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+/*Logos formatted to be placed in the table*/
+
+.profile-image p,h2 {
+    display: table-cell;
+    vertical-align: top;
+    text-align:left;
+    padding: 10px;
+    margin: 0;
+    max-width: 250px;
+}
+/*Text inside table placed beside image*/
+
+.profile-image p b{
+    font-size:150%;
+}
+
